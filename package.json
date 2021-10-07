@@ -1,0 +1,29 @@
+{
+  "name": "federation-demo",
+  "main": "gateway.js",
+  "scripts": {
+    "start-gateway": "nodemon gateway.js",
+    "start-service-accounts": "nodemon --inspect=9229 services/accounts/index.js",
+    "start-service-reviews": "nodemon --inspect=9228 services/reviews/index.js",
+    "start-service-products": "nodemon --inspect=9227 services/products/index.js",
+    "start-service-inventory": "nodemon --inspect=9226 services/inventory/index.js",
+    "start-services": "concurrently \"npm:start-service-*\"",
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "lerna": "latest",
+    "nodemon": "latest"
+  },
+  "dependencies": {
+    "@apollo/gateway": "latest",
+    "apollo-datasource-graphql": "^1.3.2",
+    "apollo-server": "latest",
+    "graphql": "latest",
+    "graphql-fields": "^2.0.3",
+    "graphql-parse-resolve-info": "^4.12.0",
+    "i": "^0.3.6",
+    "lodash": "^4.17.21",
+    "npm": "^7.17.0"
+  }
+}

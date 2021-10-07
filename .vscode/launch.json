@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to node",
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "port": 9229
+    },
+    {
+      "name": "Attach to node 1",
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "port": 9228
+    },
+    {
+      "name": "Attach to node 2",
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "port": 9227
+    },
+    {
+      "name": "Attach to node 3",
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "port": 9226
+    }
+  ]
+}
